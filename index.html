@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kajol Patel | Assistant Professor, Computer Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f0fbff;--card:#fff;--ink:#0b2a4a;--mute:#4f6b86;--line:#cfe6f3;--p:#2563eb;--p2:#0b3a82;--a:#14b8a6;--t:#0d9488;--hi:#0b2a4a;--hs:#3b5578;--glass:rgba(255,255,255,.7);--alt:linear-gradient(180deg,#e3f0ff,#d9f6f1);--hero:linear-gradient(135deg,#dbeafe,#d0f0f5 55%,#ccfbef);--g:linear-gradient(135deg,#2563eb,#0d9488 55%,#14b8a6);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 'Outfit',system-ui,sans-serif}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.2}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font:700 20px 'Fraunces',serif;text-decoration:none;color:var(--p)}
+.links{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none}
+.links a{text-decoration:none;font-size:14px;color:var(--mute);white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}
+.links a:hover,.links a.on{color:var(--p);border-color:var(--a)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:50%;width:36px;height:36px;cursor:pointer;flex:none;font-size:16px}
+:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+.hero{background:var(--hero);color:var(--hi);padding:72px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(37,99,235,.14)}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+.hello{color:var(--p);font-weight:600;margin-bottom:8px}
+.hero h1{font-size:clamp(38px,6vw,64px);margin-bottom:10px}
+.role{font-size:clamp(18px,2.5vw,24px);font-weight:500;margin-bottom:6px}
+.type{min-height:30px;color:var(--p);font-size:18px;font-weight:500}
+.type::after{content:"|";animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.hero p.lead{margin:18px 0 26px;max-width:540px;color:var(--hs)}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;margin:0 10px 10px 0;transition:transform .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(37,99,235,.25)}
+.b1{background:linear-gradient(135deg,#2563eb,#14b8a6);color:#fff}.b2{border:2px solid var(--p);color:var(--p);background:var(--glass)}.b2:hover{background:var(--p);color:#fff}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:18px;backdrop-filter:blur(6px);transition:.25s}.stat:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 14px 28px rgba(37,99,235,.2)}
+.stat b{font:700 36px 'Fraunces',serif;display:block;color:var(--p)}
+.stat span{font-size:14px;color:var(--hs)}
+section{padding:72px 0}
+.sh{margin-bottom:34px}
+.sh h2{font-size:clamp(28px,4vw,38px);color:var(--p2)}
+.sh h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--a),var(--t));margin-top:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:transform .25s,box-shadow .25s,border-color .25s}.card:hover{transform:translateY(-5px);border-color:var(--p);box-shadow:0 14px 30px rgba(37,99,235,.16)}main section:nth-child(even){background:var(--alt)!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{background:color-mix(in srgb,var(--p) 12%,transparent);color:var(--p);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:500}
+.chip.t{background:color-mix(in srgb,var(--t) 14%,transparent);color:var(--t)}
+.chip.a{background:color-mix(in srgb,var(--a) 25%,transparent);color:#0f766e}.chip{transition:.2s;cursor:default}.chip:hover,.chip.t:hover,.chip.a:hover{background:var(--p);color:#fff;transform:translateY(-3px)}
+.tl{border-left:3px solid var(--line);margin-left:8px;padding-left:26px}
+.tl .item{position:relative;margin-bottom:20px}
+.tl .item::before{content:"";position:absolute;left:-37px;top:22px;width:16px;height:16px;border-radius:50%;background:var(--a);border:3px solid var(--bg)}
+.item h3{font-size:19px}.item small{color:var(--mute)}
+.grade{float:right;background:var(--p);color:#fff;border-radius:10px;padding:2px 12px;font-size:14px;font-weight:600}
+.sub{font-family:'Fraunces',serif;font-size:20px;margin:26px 0 12px;color:var(--p)}
+ul.clean{list-style:none;padding:0}
+ul.clean li{padding:10px 0 10px 26px;border-bottom:1px dashed var(--line);position:relative}
+ul.clean li::before{content:"✦";position:absolute;left:0;color:var(--a)}ul.clean li{transition:.2s}ul.clean li:hover{padding-left:34px;color:var(--p)}
+.yr{display:inline-block;background:var(--a);color:#042f2e;font-weight:600;font-size:12px;border-radius:6px;padding:1px 8px;margin-right:6px}
+.amt{font:700 28px 'Fraunces',serif;color:var(--t)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 18px;border-radius:999px;cursor:pointer;font:500 15px 'Outfit',sans-serif}
+.tab{transition:.2s}.tab:hover{border-color:var(--p);color:var(--p);transform:translateY(-2px)}.tab[aria-selected="true"]{background:var(--p);color:#fff;border-color:var(--p)}
+.pub{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px}
+.pub .tag{flex:none;font-size:12px;font-weight:600;border-radius:8px;padding:3px 10px;background:color-mix(in srgb,var(--t) 16%,transparent);color:var(--t);margin-top:2px}
+.pub h3{font-family:'Outfit',sans-serif;font-size:16px;font-weight:600}
+.pub p{color:var(--mute);font-size:14px}
+.contact{background:var(--hero);color:var(--hi);text-align:center;border-radius:28px;padding:56px 24px}
+.contact h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+.contact p{color:var(--hs);margin-bottom:24px}
+footer{text-align:center;padding:28px 20px 40px;color:var(--mute);font-size:14px}
+.reveal{opacity:0;transform:translateY(16px);transition:.6s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:800px){.hero .wrap,.about{grid-template-columns:1fr}.hero{padding:48px 0}section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+.logo,.hero h1,.stat b,.sh h2{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}.sh h2::after{background:var(--g)}.b1{background:var(--g)}.hello{color:var(--p)}.hero::after{border-color:rgba(255,255,255,.45)}.card{box-shadow:0 8px 24px rgba(0,0,0,.04)}.yr{background:var(--g);color:#fff}</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top">Kajol Patel</a>
+  <div class="links" id="links">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#awards">Awards</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#more">Memberships</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <p class="hello">Namaste, I'm</p>
+    <h1>Kajol Patel</h1>
+    <p class="role">Assistant Professor, Computer Engineering</p>
+    <p class="role" style="font-size:16px;opacity:.9">Parul Institute of Engineering &amp; Technology (Diploma Studies), Parul University</p>
+    <p class="type" id="type"></p>
+    <p class="lead">Teacher, researcher and mentor with 7+ years in IT education, working on big-data privacy, blockchain and wearable-device security. Currently pursuing a PhD at Parul University.</p>
+    <a class="btn b1" href="#publications">View my research</a>
+    <a class="btn b2" href="#contact">Get in touch</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b data-n="7.3">0</b><span>Years of teaching</span></div>
+    <div class="stat"><b data-n="9">0</b><span>Research papers</span></div>
+    <div class="stat"><b data-n="2">0</b><span>Books published</span></div>
+    <div class="stat"><b data-n="12">0</b><span>Awards &amp; honours</span></div>
+  </div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+  <div class="sh reveal"><h2>About me</h2></div>
+  <div class="about reveal">
+    <div class="card">
+      <p>I hold a B.E. in Information Technology from Vadodara Institute of Engineering and an M.Tech (IT) from Parul University, and I am now pursuing my PhD there.</p>
+      <p style="margin-top:12px">At Parul Institute of Engineering &amp; Technology I teach programming, databases, information security, AI/ML and blockchain, and I have served as In-charge HOD. I enjoy guiding students through hackathons, startups and research projects.</p>
+      <p style="margin-top:12px">I am looking for roles in the IT field that offer professional growth and let me stay resourceful, innovative and flexible.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:19px">Subjects I teach</h3>
+      <div class="chips" id="subjects"></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="education" style="background:color-mix(in srgb,var(--card) 60%,transparent)"><div class="wrap">
+  <div class="sh reveal"><h2>Education</h2></div>
+  <div class="tl reveal" id="edu"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="sh reveal"><h2>Experience</h2></div>
+  <div class="grid reveal">
+    <div class="card"><h3>Assistant Professor</h3><small>Computer Engineering · Parul Institute of Engineering &amp; Technology, Parul University</small>
+      <p style="margin-top:10px">7.3 years of teaching programming, DBMS, information security, web development, AI/ML, Java and data structures. Also teaches the Blockchain and Native Mobile Application dual-degree courses.</p></div>
+    <div class="card"><h3>Industry training</h3><small>L &amp; T Power · 12 Jun – 15 Dec 2017</small>
+      <p style="margin-top:10px">Six-month training in the Information Technology department on Web Application Firewall using the F5 tool.</p></div>
+    <div class="card"><h3>Students guided</h3><small>Postgraduate supervision</small>
+      <p style="margin-top:10px"><span class="amt">2</span> M.Tech students guided and <span class="amt">3</span> currently guiding.</p></div>
+  </div>
+  <h3 class="sub reveal">Duties at department level</h3>
+  <div class="chips reveal" id="dept"></div>
+  <h3 class="sub reveal">Duties at institute level</h3>
+  <div class="chips reveal" id="inst"></div>
+</div></section>
+
+<section id="awards" style="background:color-mix(in srgb,var(--card) 60%,transparent)"><div class="wrap">
+  <div class="sh reveal"><h2>Awards &amp; honours</h2></div>
+  <div class="card reveal"><ul class="clean" id="aw"></ul></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="sh reveal"><h2>State-funded projects</h2></div>
+  <div class="grid reveal">
+    <div class="card"><span class="chip t">GUJCOST – STTP</span><p class="amt" style="margin:12px 0 6px">₹15,000</p>
+      <p>Organised a short-term training programme on "Recent Trends and Challenges in Cyber Security", covering evolving threats, defence technologies, data privacy, cloud security and the rising sophistication of cyberattacks.</p></div>
+    <div class="card"><span class="chip a">SSIP Startup Grant</span><p class="amt" style="margin:12px 0 6px">₹1,10,000</p>
+      <p><b>KrishiSathi</b> is an AI-driven agri-tech platform that helps small farmers with crop disease detection, labour and equipment services, and direct market access, supporting sustainable practices and higher rural incomes.</p></div>
+  </div>
+</div></section>
+
+<section id="publications" style="background:color-mix(in srgb,var(--card) 60%,transparent)"><div class="wrap">
+  <div class="sh reveal"><h2>Publications</h2></div>
+  <div class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" aria-selected="true" data-f="all">All</button>
+    <button class="tab" role="tab" aria-selected="false" data-f="Book">Books</button>
+    <button class="tab" role="tab" aria-selected="false" data-f="Journal">Journals</button>
+    <button class="tab" role="tab" aria-selected="false" data-f="Conference">Conferences</button>
+  </div>
+  <div id="pubs"></div>
+  <p style="margin-top:14px;color:var(--mute);font-size:14px">Design registered under IPR, India (2024): "Smart Device for Remote Health Monitoring of Elderly Patients".</p>
+</div></section>
+
+<section id="more"><div class="wrap">
+  <div class="sh reveal"><h2>Memberships &amp; learning</h2></div>
+  <div class="grid reveal">
+    <div class="card"><h3 style="font-size:19px">Professional bodies</h3><ul class="clean">
+      <li>Indian Society for Technical Education, Lifetime Member (LM129994)</li>
+      <li>International Association of Engineers, Life Member (328022)</li>
+      <li>Institute for Engineering Research and Publications, Life Member (PROF-11606791)</li></ul></div>
+    <div class="card"><h3 style="font-size:19px">Courses &amp; programmes attended</h3><ul class="clean">
+      <li>FDPs (AICTE): Cyber Security, Blockchain, IoT, Innovation &amp; Entrepreneurship</li>
+      <li>Python for Data Science (GUJCOST-DST) · Machine Learning using Python (ISTE)</li>
+      <li>MATLAB for Engineering &amp; Computational Research, SVNIT Surat</li>
+      <li>FDP on AI &amp; ML, SBCET Jaipur · NEP 2020 Orientation (MMTTP)</li></ul></div>
+    <div class="card"><h3 style="font-size:19px">Courses I developed</h3><ul class="clean">
+      <li>Web Designing with Bootstrap</li><li>Web Designing with NodeJS</li><li>Microsoft Azure AZ-900</li>
+      <li>Organised ISTE STTP "Breaking Through the TechHype" (2020)</li></ul></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact reveal">
+    <h2>Let's connect</h2>
+    <p>Open to collaborations, research mentoring, guest sessions and academic opportunities.</p>
+    <a class="btn b1" href="mailto:kajolpatel113@gmail.com">kajolpatel113@gmail.com</a>
+    <a class="btn b2" href="tel:+919426271905">+91 94262 71905</a>
+  </div>
+</div></section>
+</main>
+<footer>© <span id="y"></span> Kajol Patel · Assistant Professor, Computer Engineering</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const fill=(id,arr,cls)=>{$(id).innerHTML=arr.map(t=>`<span class="chip ${cls||''}">${t}</span>`).join('')};
+fill('#subjects',['Computer Programming','Python','DBMS','Advanced DBMS','Information Security','Web Development','AI / ML','Java','Data Structures','Blockchain','Native Mobile Apps'],'');
+fill('#dept',['In-charge HOD','Project Coordinator','Time Table','Continuing Education','Industrial Visit','Entrepreneurial Cell','Hackathon','Load Adjustment','Semester','NEP','Class Test','Inspection Data','Research','Internship'],'t');
+fill('#inst',['Project Coordinator','Technical Event','Techexpo','Smart India Hackathon (SPOC)','PICET Media'],'a');
+$('#edu').innerHTML=[
+['Ph.D. (Pursuing)','Parul University','Ongoing',''],
+['M.Tech (IT)','Parul University','2018','CGPA 8.06'],
+['B.E. (Information Technology)','Vadodara Institute of Engineering','2016','CGPA 6.82'],
+['HSC','Fertilizer Nagar School','2012','54%'],
+['SSC','Fertilizer Nagar School','2010','69.54%']
+].map(e=>`<div class="item card"><h3>${e[0]}${e[3]?`<span class="grade">${e[3]}</span>`:''}</h3><small>${e[1]} · ${e[2]}</small></div>`).join('');
+const aw=[['2019','Certificate of Excellence for 100% result in subject, Parul University'],['2021','Evaluator, Smart India Hackathon, AICTE'],['2022','Best Teacher Award (ARC-PIET_DS-CE), Parul University'],['2022','Jury, Smart India Hackathon, Parul University'],['2022','Mentor, Vadodara Hackathon, Parul University'],['2023','Elocution Competition, Organ Donation Week, Parul University'],['2023','Jury, Vadodara Police Hackathon, Parul University'],['2024','Mentor, Toykathon, Parul University'],['2024','Mentor, Makerfest, MS University'],['2025','Mentor, Makerfest, MS University'],['2025','Resource person: "How to plan for start-up and legal &amp; ethical steps", PIT &amp; PIAC'],['2025','Jury, ProjectExpo, KPGU']];
+$('#aw').innerHTML=aw.map(a=>`<li><span class="yr">${a[0]}</span>${a[1]}</li>`).join('');
+const pubs=[
+['Book','Database Management System','Single author · June 2021'],
+['Book','Python for Everyone','Joint author · July 2022'],
+['Conference','Privacy Preserving Techniques for Big Data: A Survey','2nd Intl. Conf. on Inventive Communication and Computational Technologies (IEEE) · 2018'],
+['Journal','A Study on T-Closeness over K-Anonymization Technique for Privacy Preserving in Big Data','International Journal of Emerging Research and Technology · 2019'],
+['Journal','Privacy Preserving Methodology for Big Data','International Journal of Emerging Research and Development · 2020'],
+['Journal','A New Strategy for Automatic Face Annotation','International Journal for Innovative Research in Multidisciplinary Field · 2021'],
+['Journal','Digital Identity Using Decentralized System in Blockchain','IJSREM · 2024 (survey)'],
+['Conference','Security in Bluetooth and Wearable Devices: A Survey','4th Intl. Conf. on Sentiment Analysis and Deep Learning (ICSADL) · 2025 · Scopus indexed'],
+['Conference','Hand Gesture Sign Language Recognition Embedded with Arduino Uno','IET Conference Proceedings CP920, Vol. 2025 No. 7, pp. 1156–1163 · Scopus indexed'],
+['Conference','Always On, Always Exposed: Survey on Bluetooth Risks in Wearable Devices','IET Conference Proceedings CP920, Vol. 2025 No. 7, pp. 300–306 · Scopus indexed'],
+['Conference','Enhancing Bluetooth Security in Wearable Devices Using a Hybrid AES-192 and ECC Encryption Model','IET Conference Proceedings CP920, Vol. 2025 No. 7, pp. 839–848 · May 2025 · Scopus indexed']];
+function draw(f){$('#pubs').innerHTML=pubs.filter(p=>f=='all'||p[0]==f).map(p=>`<div class="card pub"><span class="tag">${p[0]}</span><div><h3>${p[1]}</h3><p>${p[2]}</p></div></div>`).join('')}
+draw('all');
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;document.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-selected',t===b));draw(b.dataset.f)});
+// typed roles
+const roles=['Big Data Privacy','Blockchain Applications','Wearable Device Security','AI-driven Agri-Tech'];let ri=0,ci=0,del=false;
+(function tick(){const w=roles[ri];$('#type').textContent=w.slice(0,ci);if(!del&&ci++==w.length){del=true;return setTimeout(tick,1400)}if(del&&--ci<0){del=false;ci=0;ri=(ri+1)%roles.length}setTimeout(tick,del?40:80)})();
+// counters
+document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n;let i=0;const s=setInterval(()=>{i++;el.textContent=Number.isInteger(n)?Math.round(n*i/30):(n*i/30).toFixed(1);if(i>=30)clearInterval(s)},35)});
+// reveal + active nav
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('#links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section').forEach(s=>spy.observe(s));
+// theme
+$('#y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
