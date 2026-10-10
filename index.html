@@ -80,7 +80,7 @@ footer{text-align:center;padding:28px 20px 40px;color:var(--mute);font-size:14px
 </head>
 <body>
 <nav><div class="wrap">
-  <a class="logo" href="#top">Kajol Patel</a>
+  <a class="logo" href="#top"> Mrs. Kajol Bhavinkumar Patel</a>
   <div class="links" id="links">
     <a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#awards">Awards</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#more">Memberships</a><a href="#contact">Contact</a>
   </div>
@@ -89,8 +89,8 @@ footer{text-align:center;padding:28px 20px 40px;color:var(--mute);font-size:14px
 <header class="hero" id="top"><div class="wrap">
   <div>
     <p class="hello">Namaste, I'm</p>
-    <h1>Kajol Patel</h1>
-    <p class="role">Assistant Professor, Computer Engineering</p>
+    <h1>Mrs. Kajol Bhavinkumar Patel </h1>
+    <p class="role">HOD & Assistant Professor, Computer Engineering</p>
     <p class="role" style="font-size:16px;opacity:.9">Parul Institute of Engineering &amp; Technology (Diploma Studies), Parul University</p>
     <p class="type" id="type"></p>
     <p class="lead">Teacher, researcher and mentor with 7+ years in IT education, working on big-data privacy, blockchain and wearable-device security. Currently pursuing a PhD at Parul University.</p>
@@ -206,10 +206,10 @@ fill('#dept',['In-charge HOD','Project Coordinator','Time Table','Continuing Edu
 fill('#inst',['Project Coordinator','Technical Event','Techexpo','Smart India Hackathon (SPOC)','PICET Media'],'a');
 $('#edu').innerHTML=[
 ['Ph.D. (Pursuing)','Parul University','Ongoing',''],
-['M.Tech (IT)','Parul University','2018','CGPA 8.06'],
-['B.E. (Information Technology)','Vadodara Institute of Engineering','2016','CGPA 6.82'],
-['HSC','Fertilizer Nagar School','2012','54%'],
-['SSC','Fertilizer Nagar School','2010','69.54%']
+['M.Tech (IT)','Parul University','2018'],
+['B.E. (Information Technology)','Vadodara Institute of Engineering','2016'],
+['HSC','Fertilizer Nagar School','2012'],
+['SSC','Fertilizer Nagar School','2010']
 ].map(e=>`<div class="item card"><h3>${e[0]}${e[3]?`<span class="grade">${e[3]}</span>`:''}</h3><small>${e[1]} · ${e[2]}</small></div>`).join('');
 const aw=[['2019','Certificate of Excellence for 100% result in subject, Parul University'],['2021','Evaluator, Smart India Hackathon, AICTE'],['2022','Best Teacher Award (ARC-PIET_DS-CE), Parul University'],['2022','Jury, Smart India Hackathon, Parul University'],['2022','Mentor, Vadodara Hackathon, Parul University'],['2023','Elocution Competition, Organ Donation Week, Parul University'],['2023','Jury, Vadodara Police Hackathon, Parul University'],['2024','Mentor, Toykathon, Parul University'],['2024','Mentor, Makerfest, MS University'],['2025','Mentor, Makerfest, MS University'],['2025','Resource person: "How to plan for start-up and legal &amp; ethical steps", PIT &amp; PIAC'],['2025','Jury, ProjectExpo, KPGU']];
 $('#aw').innerHTML=aw.map(a=>`<li><span class="yr">${a[0]}</span>${a[1]}</li>`).join('');
